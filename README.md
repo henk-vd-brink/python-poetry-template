@@ -8,5 +8,11 @@ curl -sSL https://raw.githubusercontent.com/python-poetry/poetry/master/install-
 
 Start new project:
 ```
+poetry install
 poetry config virtualenvs.in-project true
+```
+
+Run:
+```
+poetry run python -m app
 ```
