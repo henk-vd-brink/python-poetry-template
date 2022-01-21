@@ -1,0 +1,46 @@
+[tool.poetry]
+name = "Poetry Template"
+version = "1.0.0"
+description = ""
+authors = [""]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+pytest-testmon = "^1.2.2"
+pytest-watch = "^4.2.0"
+pytest-cov = "^3.0.0"
+black = "^21.12b0"
+flake8 = "^4.0.1"
+mypy = "^0.910"
+bandit = "^1.7.1"
+isort = "^5.10.1"
+pydocstyle = "^6.1.1"
+pre-commit = "^2.16.0"
+flake8-docstrings = "^1.6.0"
+autoflake = "^1.4"
+dlint = "^0.12.0"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.isort]
+profile = "black"
+
+[tool.black]
+exclude = """
+/(
+  | .git
+  | .hg
+  | .mypy_cache
+  | .tox
+  | .venv
+  | _build
+  | buck-out
+  | build
+  | dist
+)/
+"""
